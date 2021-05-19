@@ -14,15 +14,15 @@ provider "azurerm" {
   features {}
 }
 # The configuration for the `remote` backend.
-     terraform {
-  backend "remote" {
-    organization = "satya136"
-
-    workspaces {
-      name = "gh-actions-demo"
-    }
-  }
-}
+#     terraform {
+#  backend "remote" {
+#    organization = "satya136"
+#
+#    workspaces {
+#      name = "gh-actions-demo"
+#    }
+#  }
+#}
 
 # create resource group
 resource "azurerm_resource_group" "rg" {
